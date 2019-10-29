@@ -6,6 +6,8 @@ class Solution:
             letter += 1
 
     def lengthOfLongestSubstring(self, s):
+        if (not s or type(s) is not str):
+            return(0)
         self.hashMap = {}
         self.initHashMap()
         longest = 0
